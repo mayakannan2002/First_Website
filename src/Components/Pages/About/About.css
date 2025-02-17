@@ -1,0 +1,104 @@
+/* About Page Styling */
+.about-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner Section */
+.about-banner {
+    position: relative;
+    background: url('E:\PIXALIVE\Pixalive\littus\src\Components\assets\Images\background1.jpg') center center / cover no-repeat;
+    height: 150px; /* Adjust height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Dark overlay to improve text readability */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+.banner-content h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* Home Link */
+.home-link {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
+/* About Content */
+.about-content {
+    padding: 40px;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* Mission & Vision Sections (Without Cards) */
+.about-text-section {
+    padding: 40px;
+    line-height: 1.8;
+    font-size: 18PX;
+}
+
+.about-text-section h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000080;
+    margin-bottom: 0px;
+}
+
+/* List Styling */
+.about-text-section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.about-text-section ul li {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-banner {
+        height: 180px; /* Adjust banner height for mobile */
+    }
+
+    .banner-content h1 {
+        font-size: 26px;
+    }
+
+    .about-content,
+    .about-text-section {
+        padding: 20px;
+    }
+}

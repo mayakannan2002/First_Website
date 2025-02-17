@@ -1,0 +1,92 @@
+/* WebApplication.css */
+
+.web-application {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  padding: 15px 50px;
+  font-size: 15px;
+  flex-wrap: wrap;
+   /* background: linear-gradient(to right, #cca43b, #fffffa) */
+
+}
+
+.header3 {
+  background: #f5f5f5;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  background: linear-gradient(to right, #cca43b,white);
+  margin-bottom: 20px;
+}
+
+.header3 .breadcrumb {
+  font-size: 15px;
+  color: #060606;
+  
+}
+
+.header3 h1 {
+  font-size: 30px;
+  margin-top: 10px;
+  color: #000080;
+}
+
+.intro {
+  padding: 20px;
+  background: #fff;
+}
+
+.intro p {
+  margin-bottom: 15px;
+}
+
+.expertise {
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.expertise h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #000080;
+}
+
+.expertise-category {
+  margin-top: 20px;
+}
+
+.expertise-category h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #000080;
+}
+
+.expertise-category table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.expertise-category table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.footer1 {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #cca43b, #fffffa);
+  border-top: 1px solid #ddd;
+}
+
+.footer1 a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.footer1 a:hover {
+  text-decoration: underline;
+}

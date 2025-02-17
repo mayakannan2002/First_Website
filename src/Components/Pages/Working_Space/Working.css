@@ -1,0 +1,94 @@
+/* Workspace.css */
+.workspace-container {
+  background-color: white;
+  padding: 20px,50px;
+}
+
+.workspace-wrapper {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.workspace-header {
+  font-size: 1.675rem;
+  font-weight: bold;
+  color: #2d3748;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.workspace-description {
+  color: #4a5568;
+  font-size: 1.125rem;
+  text-align:left;
+  line-height: 1.6;
+}
+
+.workspace-subheader {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-top: 2.5rem;
+}
+
+.workspace-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #4a5568;
+  font-size: 1.125rem;
+  margin-top: 1rem;
+}
+
+.workspace-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.workspace-card {
+  background-color: #fffff6;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+.card-description {
+  color: #4a5568;
+  margin-top: 0.5rem;
+}
+
+.card-features {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.card-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #4a5568;
+  margin-top: 0.5rem;
+}
+
+.workspace-cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.workspace-link {
+  color: #e53e3e;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.workspace-link:hover {
+  color: #c53030;
+}

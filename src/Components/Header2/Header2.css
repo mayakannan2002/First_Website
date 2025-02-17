@@ -1,0 +1,149 @@
+/* Header Container */
+.header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    font-weight: bold;
+    padding: 5px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  /* Logo */
+  .logo img {
+    height: 100px; /* Adjust logo size */
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+    
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-links a.active, .nav-links a:hover {
+    color: #000080;
+  }
+  
+  /* Dropdown Styling */
+ /* Ensure Dropdown Stays Visible */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: fixed; /* Make it fixed */
+  top: 50px; /* Adjust this based on header height */
+  left: auto;
+  right: auto;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: none; /* Hide initially */
+  flex-direction: column;
+  width: 250px;
+  z-index: 1000; /* Ensure it appears above other sections */
+}
+
+/* Show dropdown when hovering */
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .dropdown-menu a {
+    padding: 12px 15px;
+    text-decoration: none;
+    color: black;
+    transition: background 0.3s;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dropdown-menu a:hover {
+    background: lightgray;
+  }
+  
+  /* Mobile Menu Icon */
+  .mobile-menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .header2 {
+      padding: 10px 20px;
+    }
+  
+    .logo img {
+      height: 70px; /* Adjust logo size for mobile */
+    }
+  
+    .mobile-menu-icon {
+      display: block;
+      position: absolute;
+      right: 20px;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+    }
+  
+    .nav-links.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  
+    .dropdown-menu {
+      position: relative;
+      width: 100%;
+    }
+  }
+  

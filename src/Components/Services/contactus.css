@@ -1,0 +1,56 @@
+.banner-container {
+    background: linear-gradient(to right, #cca43b, #fffffa);
+    display: flex;
+    align-items: center;
+    padding: 20px; /* Adjusted padding */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem; /* Adjusted font size using rem */
+    border-radius: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center content horizontally */
+}
+
+.banner-container .text-area {
+    color: rgb(10, 9, 9);
+    text-align: center; /* Center text within the text area */
+    margin-bottom: 10px; /* Add some bottom margin for stacking */
+}
+
+.text-area {
+    flex: 1 1 100%; /* Take full width on smaller screens */
+    margin-right: 0; /* Remove right margin */
+}
+
+.contact-button {
+    background-color: #000080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 1rem; /* Use rem for button font size too */
+    white-space: nowrap; /* Prevent button text from wrapping */
+}
+
+.contact-button:hover {
+    background-color: #000060;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .banner-container {
+        padding: 15px; /* Further reduce padding on very small screens if needed */
+    }
+
+    .banner-container .text-area {
+        font-size: 1rem; /* Smaller font size on small screens */
+    }
+
+    .contact-button {
+        font-size: 0.9rem; /* Smaller button font size */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}
