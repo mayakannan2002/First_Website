@@ -59,25 +59,25 @@ export default function ServicesSection() {
       </div>
       <div className="services-grid1">
         {services.map((service, index) => (
-          <div key={index} className="service-card">
-            <img src={service.image} alt={service.title} className="service-image" />
-            <h3 className="service-title">{service.title}</h3>
-            <hr className="service-divider" />
-            <p className="service-description">{service.description}</p>
+          <div key={index} className="service-card1">
+            <img src={service.image} alt={service.title} className="service-image1" />
+            <h3 className="service-title1">{service.title}</h3>
+            <hr className="service-divider1" />
+            <p className="service-description1">{service.description}</p>
          
             {/* Contact Section for Consulting */}
             {service.contact && (
-              <div className="service-contact">
-                <p className="contact-label">{service.contact.label}</p>
-                <p className="contact-mobile">
-                  Mobile No: <span className="contact-highlight">{service.contact.mobile}</span>
+              <div className="service-contact1">
+                <p className="contact-label1">{service.contact.label}</p>
+                <p className="contact-mobile1">
+                  Mobile No: <span className="contact-highlight1">{service.contact.mobile}</span>
                 </p>
               </div>
             )}
 
             {/* Button Section for Our Process */}
             {service.button && (
-              <button className="service-button">{service.button.text}</button>
+              <button className="service-button1">{service.button.text}</button>
             )}
           </div>
         ))}

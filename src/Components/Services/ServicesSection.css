@@ -1,11 +1,11 @@
 /* Services Section */
-.services-section {
+.services-section1 {
     padding: 50px;
     text-align: center;
   }
   
   /* Services Grid */
-  .services-grid {
+  .services-grid1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -13,7 +13,7 @@
   }
   
   /* Service Card */
-  .service-card {
+  .service-card1 {
     background: #fff;
     border-radius: 10px;
     padding: 20px;
@@ -22,61 +22,61 @@
     transition: 0.3s;
   }
   
-  .service-card:hover {
+  .service-card1:hover {
     transform: translateY(-5px);
   }
   
   /* Service Image */
-  .service-image {
+  .service-image1 {
     width: 100%;
     height: auto;
     border-radius: 10px;
   }
   
   /* Service Title */
-  .service-title {
+  .service-title1 {
     font-size: 1.5rem;
     margin: 15px 0;
-    color: #e41c1c;
+    color: #333;
   }
   
   /* Service Description */
-  .service-description {
+  .service-description1 {
     font-size: 1rem;
     color: #666;
   }
   
   /* Service Divider */
-  .service-divider {
+  .service-divider1 {
     border: 1px solid #ddd;
     margin: 10px 0;
   }
   
   /* Contact Section */
-  .service-contact {
+  .service-contact1 {
     background: #f9f9f9;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
   }
   
-  .contact-label {
+  .contact-label1 {
     font-size: 1rem;
     font-weight: bold;
     color: #333;
   }
   
-  .contact-mobile {
+  .contact-mobile1 {
     font-size: 1.1rem;
     color: #ff4a57;
   }
   
-  .contact-highlight {
+  .contact-highlight1 {
     font-weight: bold;
   }
   
   /* Service Button */
-  .service-button {
+  .service-button1 {
     background-color: #ff4a57;
     color: #fff;
     padding: 10px 20px;
@@ -89,7 +89,7 @@
     width: 100%;
   }
   
-  .service-button:hover {
+  .service-button1:hover {
     background-color: #e43e4d;
   }
   

@@ -25,17 +25,17 @@ export default function CardSection() {
   ];
 
   return (
-    <div className="card-section">
+    <div className="card-section2">
       {services.map((service, index) => (
         <div
           key={index}
-          className={`card ${service.highlight ? "highlight" : ""}`}
+          className={`card2 ${service.highlight ? "highlight2" : ""}`}
         >
-          <div className={`icon ${service.highlight ? "icon-highlight" : ""}`}>
+          <div className={`icon1 ${service.highlight ? "icon-highlight2" : ""}`}>
             {service.icon}
           </div>
-          <h3 className="card-title">{service.title}</h3>
-          <p className="card-description">{service.description}</p>
+          <h3 className="card-title1">{service.title}</h3>
+          <p className="card-description2">{service.description}</p>
         </div>
       ))}
     </div>

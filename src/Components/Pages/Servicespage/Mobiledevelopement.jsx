@@ -5,18 +5,12 @@ import "./Webdevelopement.css";
 const WebApplication = () => {
   return (
     <div className="web-application">
-      <div className="contact-banner">
-      {/* Dark Overlay */}
-      <div className="overlay"></div>
-
-      {/* Content */}
-      <div className="content">
-        <h1>Contact</h1>
-        <nav className="breadcrumb">
-          <span className="home">Home</span> &gt; <span>Contact</span>
-        </nav>
-      </div>
-    </div>
+      <header className="header3">
+        <div className="breadcrumb">
+          <p>  <Link to="/">Home</Link> &gt; Mobile Application Development</p>
+        </div>
+        <h1>Mobile Application Development</h1>
+      </header>
 
       <section className="intro">
         <p>
